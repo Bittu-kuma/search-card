@@ -1,0 +1,26 @@
+h3{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing:1px;
+}
+.App {
+  text-align: center;
+  width:100%;
+  height: 100vh;
+  /* background-color:skyblue; */
+}
+.course
+{
+  width:90%;
+  margin:50px auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(370px, 1fr));
+  grid-gap:30px;
+  grid-auto-rows:minmax(100px, auto);
+  grid-auto-columns: minmax(50px, auto);
+}
+@media only screen and (max-width:768px)
+{
+  .course{
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  }
+}
